@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yuvraj Giran's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated network background (stays behind everything) -->
+  <canvas id="bg"></canvas>
+
+  <!-- Page content -->
+  <header class="page">
+    <!-- Two independent scroll areas in one grid -->
+    <div class="container">
+      <!-- LEFT COLUMN (its own scroll container) -->
+      <aside class="left" id="leftPane">
+        <h1 class="title">Yuvraj Giran</h1>
+
+        <p class="subtitle">Software Engineer</p>
+
+        <!-- Short summary -->
+        <p class="summary">
+          Hands-on developer with experience in Java, Python, C++, and 
+          full-stack fundamentals, with completed projects in GUI development, 
+          logic-based programming, and web technologies. Open to software engineering 
+          internship or full-time roles for Summer 2026; planning to pursue a Master’s in 
+          Engineering Management at ASU.
+        </p>
+
+        <!-- Recruiter-first facts -->
+        <div class="quick">
+          <div><strong>School:</strong> Arizona State University</div>
+          <div><strong>Program:</strong> B.S. Computer Science (Software Engineering)</div>
+          <div><strong>GPA:</strong> 3.51 / 4.0</div>
+          <div><strong>Location:</strong> Phoenix, AZ</div>
+        </div>
+
+        <!-- Bullet navigation (clicks scroll the RIGHT column only) -->
+        <nav class="bullet-nav" id="bulletNav">
+          <a class="bullet" href="#education"><span>Education</span></a>
+          <a class="bullet" href="#experience"><span>Experience</span></a>
+          <a class="bullet" href="#projects"><span>Projects</span></a>
+          <a class="bullet" href="#skills"><span>Technical Skills</span></a>
+          <a class="bullet" href="#extras"><span>Extracurriculars</span></a>
+          <a class="bullet" href="#about"><span>About</span></a>
+        </nav>
+
+        <!-- Contact / profiles (replace # with your links later) -->
+        <div class="links">
+          <a href="#" aria-label="Email">Email</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </aside>
+
+      <!-- RIGHT COLUMN (its own scroll container) -->
+      <main class="right" id="rightPane">
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <p><strong>Arizona State University</strong> — B.S. Computer Science (Software Engineering)</p>
+          <ul class="plain">
+            <li><strong>GPA: </strong>3.51 / 4.0</li>
+            <li><strong>Relevant Courses: </strong>Data Structures and Algorithms, Object-Oriented Programming, 
+              Computer Organization and Assembly Language, Compiler Design and Implementation, 
+              Operating Systems, Software Analysis and Design, Software QA and Testing, Database Management, Distributed Computing
+            </li>
+            <li><strong>Expected Graduation: </strong>May 2026</li>
+          </ul>
+        </section>
+
+        <section id="experience" class="section">
+          <h2>Technical Experience</h2>
+          <article class="item">
+            <header>
+              <h3>Client Management System for Threading Salon/Brow Bar (HDBrow&SkinRx), <i>Team Project</i></h3>
+              <span class="meta">Jan 2023 – May 2023 • Chandler, AZ</span>
+            </header>
+            <ul class="plain">
+              <li>•	Built a JavaFX desktop application to manage 100+ client records, improving front-desk efficiency and service tracking.</li>
+              <li>•	Developed secure forms to create and update client info (name, contact, payment, stylist notes) using Java OOP principles.</li>
+              <li>•	Implemented password based authentication to restrict access and enhance data privacy.</li>
+              <li>•	Optimized customer record management with dynamic search by name and phone number, implementing efficient algorithms with OOP principles and GitHub version control.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <header>
+              <h3>Nowhere Collective • Capstone Project</h3>
+              <span class="meta">Aug 2025 – Present</span>
+            </header>
+            <ul class="plain">
+              <li>• Developed a full-stack web application (Svelte, Node.js/Express, Firebase, Stripe) enabling material exchange and purchases to reduce landfill waste.</li>
+              <li>• Delivered a responsive, scalable marketplace with secure authentication, cloud-hosted data, and integrated payment processing.</li>
+              <li>• Applied Agile practices and Git/GitHub workflows for collaborative development, code reviews, and version control.</li>
+              <li>• Contributed to the company’s mission by leveraging technology to support sustainability and creative reuse initiatives.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="projects" class="section">
+          <h2>Projects</h2>
+          <ul class="projects">
+            <li>
+              <div class="row">
+                <span class="name">Self-Completing Chess Game in Prolog, Team Lead (ASU)</span>
+                <span class="year">Spring 2024</span>
+              </div>
+              <p class="desc">•	Led a 3-person team to build an autonomous chess engine in Prolog, simulating strategic move logic using Agile principles.<br>
+                              •	Coded algorithms to calculate and execute the optimal move based on current board state autonomously.<br>
+                              •	Designed dynamic console-based board display to track game progression.
+              </p>
+            </li>
+            <li>
+              <div class="row">
+                <span class="name">Project Spyn, Team Lead (ASU)</span>
+                <span class="year">Fall 2022</span>
+              </div>
+              <p class="desc">•	Engineered an autonomous LEGO robotic vehicle utilizing MATLAB programming, implementing sensor fusion between light and color sensors for effective maze navigation and pathfinding algorithms.<br>
+                              •	Implemented obstacle detection system with collision avoidance protocols using MATLAB, incorporating recursive path recalculation and reverse maneuver sequences to maintain continuous autonomous navigation.<br>
+                              •	Designed and programmed object manipulation functionality with precise motor control for secure payload acquisition and transport of a wheelchair-bound LEGO figure, demonstrating practical application of robotics algorithms.
+              </p>
+            </li>
+            <li>
+              <div class="row">
+                <span class="name">Interactive Memory Tile Game, Team Lead</span>
+                <span class="year">Mar 2021</span>
+              </div>
+              <p class="desc">•	Lead programmers and developed an engaging web-based memory game using JavaScript, HTML and CSS, designed to enhance cognitive skills through increasingly challenging levels.<br>
+                              •	Engineered an interactive user interface featuring sequence visualization algorithms that prompt users to replicate patterns, incorporating CSS transitions and JavaScript timing functions for smooth animations.<br>
+                              •	Developed progressive difficulty scaling logic with parameterized complexity variables that incrementally adjust pattern length, display speed, and sequence randomization based on user performance metrics.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills" class="section">
+          <h2>Technical Skills</h2>
+          <ul class="plain">
+            <li><strong>Languages:</strong> Java, C/C++, Python, JavaScript, Prolog, Bash, HTML, CSS, MATLAB</li>
+            <li><strong>Frameworks & Libraries:</strong> React, Node.js/Express, JavaFX, jQuery </li>
+            <li><strong>Tools, Databases, and OS:</strong> VSCode, mySQL, Git, GitHub, Windows, MacOS, Linux PostgreSQL, Ghidra, Wireshark, Debuggers, Figma, Firebase</li>
+            <li><strong>Certifications:</strong> University of Pennsylvania High School Coding Bootcamp (Summer 2021)</li>
+          </ul>
+        </section>
+
+        <section id="extras" class="section">
+          <h2>Extracurriculars</h2>
+          <ul class="plain">
+            <li>Software Developers Association, ASU Tempe —	Attended meetings to participate in Hackatons, xgain experience in Computer Science and Software Engineering topics.</li>
+            <li>Feed My Starving Children, ASU Tempe — Volunteered to help package nutritionally complete meals for undernourished children in developing nations.</li>
+            <li>Astronomy Club (Vice President) Perry High School, Gilbert, AZ —	Led biweekly meetings, organized events, and increased student engagement through outreach initiatives.</li>
+          </ul>
+        </section>
+
+        <section id="about" class="section">
+          <h2>About</h2>
+          <p>
+            Im Yuvraj, a passionate software engineer who loves building technology that makes a real impact. I’m especially drawn to projects where code can solve everyday problems, whether that’s making businesses more efficient, helping people live healthier lives, or supporting sustainability.
+
+            I thrive on learning new tools and frameworks, and I enjoy the challenge of turning complex ideas into simple, user-friendly applications. From crafting clean, scalable code to collaborating on GitHub, I approach every project with curiosity and a drive to keep improving.
+
+            Beyond the technical side, I care deeply about using software for good. One of my recent projects was building a marketplace web app to repurpose materials that would otherwise end up in landfills; blending creativity, sustainability, and tech.
+
+            For me, engineering isn’t just about writing code; it’s about problem-solving, teamwork, and leaving things better than I found them.
+          </p>
+
+        </section>
+      </main>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
